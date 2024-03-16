@@ -12,6 +12,9 @@
             <input v-model="artist" class="input" type="text" placeholder="Artist Name">
           </p>
           <p class="control">
+            <input v-model="descript" class="input" type="text" placeholder="Description">
+          </p>
+          <p class="control">
             <div class="dropdown" :class="{ 'is-active': dropdownOpen }">
               <div class="dropdown-trigger">
                 <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" @click="toggleDropdown">
@@ -23,11 +26,13 @@
               </div>
               <div class="dropdown-menu" id="dropdown-menu" role="menu">
                 <div class="dropdown-content">
-                  <a @click.prevent.stop="setGenre('Painting')" class="dropdown-item">Painting</a>
-                  <a @click.prevent.stop="setGenre('Sculpture')" class="dropdown-item">Sculpture</a>
-                  <a @click.prevent.stop="setGenre('Drawing')" class="dropdown-item">Drawing</a>
-                  <a @click.prevent.stop="setGenre('Digital Art')" class="dropdown-item">Digital Art</a>
-                  <a @click.prevent.stop="setGenre('Photograph')" class="dropdown-item">Photograph</a>
+                  <a @click.prevent.stop="setGenre('Abstract')" class="dropdown-item">Abstract</a>
+                  <a @click.prevent.stop="setGenre('Landscape')" class="dropdown-item">Landscape</a>
+                  <a @click.prevent.stop="setGenre('Portrait')" class="dropdown-item">Portrait</a>
+                  <a @click.prevent.stop="setGenre('Contemporary')" class="dropdown-item">Contemporary</a>
+                  <a @click.prevent.stop="setGenre('Photography')" class="dropdown-item">Photography</a>
+                  <a @click.prevent.stop="setGenre('Still Life')" class="dropdown-item">Still Life</a>
+                  <a @click.prevent.stop="setGenre('Impressionism')" class="dropdown-item">Impressionism</a>
                 </div>
               </div>
             </div>
@@ -41,7 +46,6 @@
   </div>
 </template>
 
-
 <script setup>
 import { ref, watch } from 'vue';
 import { getStorage, ref as sRef, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
@@ -52,6 +56,7 @@ const imageName = ref('');
 const imageExtension = ref('');
 const artist = ref('');
 const genre = ref('');
+const descript = ref('');
 const files = ref([]);
 const reader = new FileReader();
 
@@ -101,7 +106,9 @@ async function saveURLtoFirestore(url) {
     ImageName: name + ext,
     ImageURL: url,
     Artist: artist.value,
-    Genre: genre.value
+    Genre: genre.value,
+    Likes: 0,
+    Description: descript.value
   });
 
   console.log('Image data uploaded to Firestore!');
