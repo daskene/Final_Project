@@ -12,6 +12,7 @@
                 <router-link class="posting-link" to="/posting">Post Artwork</router-link>
                 <router-link class="login-link" to="/login">Login</router-link>
                 <router-link class="signup-link" to="/signup">Sign up</router-link>
+                <router-link class="delete-link" to="/delete">Delete artwork</router-link>
             </div>
         </div>
     </div>
@@ -60,6 +61,7 @@
     .gallery-link,
     .posting-link,
     .login-link,
+    .delete-link,
     .signup-link {
         margin-right: 20px; /* Adjust spacing between links */
         color: white; /* Set text color */
@@ -71,6 +73,7 @@
         .gallery-link:hover,
         .posting-link:hover,
         .login-link:hover,
+        .delete-link:hover,
         .signup-link:hover {
             text-decoration: underline; /* Add underline on hover */
         }
