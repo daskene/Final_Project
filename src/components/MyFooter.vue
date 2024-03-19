@@ -3,7 +3,8 @@
         <div class="footer-content">
             <Logo />
             <p>This is a Footer</p>
-            <a href="/policies" class="policies-link">Policies</a>
+            <router-link to="/policies" class="policies-link">Policies</router-link>
+            <router-link to="/contact" class="contact-link">Contact Us</router-link>
         </div>
     </footer>
 </template>
@@ -20,8 +21,8 @@
 <style scoped>
     .footer-black {
         background-color: black;
-        width: 100%; /* Ensure the footer extends full width */
-        height: 100px; /* Or whatever height you prefer */
+        width: 100%; /* to Ensure the footer extends full width */
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,13 +36,18 @@
     }
 
     .logo {
-        margin-right: 15px; /* Adjust as needed */
+        margin-right: 15px;
     }
 
     .policies-link {
-        margin-left: 15px; /* Adjust as needed */
+        margin-left: 15px;
         color: white; /* Ensuring it's visible against the black background */
         text-decoration: none;
     }
 
+    .contact-link {
+        margin-left: 15px;
+        color: white; /* Ensuring it's visible against the black background */
+        text-decoration: none;
+    }
 </style>

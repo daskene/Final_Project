@@ -2,7 +2,7 @@
 
 <template>
     <div class="grid-container">
-        <!-- Replace direct HTML with Header component -->
+        
         <Header class="home-header" />
 
         <div class="Awards">
