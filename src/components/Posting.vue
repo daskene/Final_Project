@@ -102,7 +102,8 @@
             Artist: artist.value,
             Genre: genre.value,
             Description: descript.value,
-            Likes: 0
+            Likes: 0,
+            Dislikes: 0
         });
 
         console.log('Image data uploaded!');
