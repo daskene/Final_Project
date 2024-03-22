@@ -57,7 +57,8 @@
     .grid-container {
         display: flex;
         flex-direction: column;
-        max-width: 1200px;
-        margin: 0 auto;
+        width: 100%; /* Ensures it takes the full width of the viewport */
+        max-width: 1200px; /* Maximum width but allows smaller on narrower screens */
+        margin: 0 auto; /* Centers the content horizontally */
     }
 </style>

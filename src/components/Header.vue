@@ -14,6 +14,7 @@
                 <router-link class="signup-link" to="/signup">Sign up</router-link>
                 <router-link class="delete-link" to="/delete">Delete artwork</router-link>
             </div>
+            <ProfileIcon class="profile-icon" />
         </div>
     </div>
 </template>
@@ -21,6 +22,7 @@
 <script setup>
     import Logo from '../components/Logo.vue';
     import SearchBar from '../components/SearchBar.vue';
+    import ProfileIcon from '../components/ProfileIcon.vue'; // Ensure this is the correct path
 </script>
 
 
@@ -30,65 +32,69 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100vw; /* Use percentage to fit container width */
+        width: 100vw;
         background-color: black;
         padding: 10px 20px;
     }
 
-
     .logo-container {
         display: flex;
-        align-items: center; /* Centers items vertically */
+        align-items: center;
+    }
+
+    .home-logo {
+        width: 100px; /* Increase size of the logo */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .site-name {
-        color: white; /* Set text color */
-        margin-left: 10px; /* Add spacing between logo and site name */
-        font-size: 20px; /* Adjust font size */
+        color: white;
+        margin-left: 10px;
+        font-size: 24px; /* Increase font size */
     }
 
     .links-container {
-        display: flex; /* Use flexbox for side-by-side layout */
-        align-items: center; /* Center items vertically */
+        display: flex;
+        align-items: center;
     }
 
     .nav-links {
-        display: flex; /* Use flexbox for side-by-side layout */
+        display: flex;
     }
 
-    /* Style for individual links */
     .home-link,
     .gallery-link,
     .posting-link,
     .login-link,
     .delete-link,
     .signup-link {
-        margin-right: 20px; /* Adjust spacing between links */
-        color: white; /* Set text color */
-        text-decoration: none; /* Remove default underline */
+        margin-right: 20px;
+        color: white;
+        text-decoration: none;
     }
 
-        /* Optional: Hover styles for links */
         .home-link:hover,
         .gallery-link:hover,
         .posting-link:hover,
         .login-link:hover,
         .delete-link:hover,
         .signup-link:hover {
-            text-decoration: underline; /* Add underline on hover */
+            text-decoration: underline;
         }
 
     .home-search-bar {
-        width: auto; /* Adjust based on the layout, or use percentage */
-        max-width: 600px; /* Example max-width, adjust as needed */
-        margin-right: 20px; /* Existing margin */
-        padding: 10px; /* Adjust padding to fit your design */
+        max-width: 600px;
+        margin-right: 20px;
+        padding: 10px;
     }
 
-    /* Example of a media query for responsive adjustment */
+    .profile-icon {
+        margin-left: auto; /* Push the profile icon to the far right */
+    }
+
     @media (max-width: 768px) {
         .home-search-bar {
-            width: 100%; /* Full width on smaller screens */
+            width: 100%;
         }
     }
 </style>

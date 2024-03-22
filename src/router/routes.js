@@ -7,6 +7,7 @@ import GalleryPage from '../pages/GalleryPage.vue';
 import DeletePage from '../pages/DeletingPage.vue';
 import Contact from '../pages/Contact.vue';
 import Policies from '../pages/Policies.vue';
+import Profile from '../pages/ProfilePage.vue';
 
 
 export default [
@@ -18,5 +19,5 @@ export default [
     { path: '/delete', component: DeletePage },
     { path: '/contact', component: Contact },
     { path: '/policies', component: Policies },
-
+    { path: '/profile', component: Profile},
 ];

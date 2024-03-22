@@ -1,7 +1,7 @@
 <template>
-    <div class="flex-container">
+    <div class="profile-page">
         <Header />
-        <Deleting />
+        <Profile />
         <Footer />
     </div>
 </template>
@@ -9,19 +9,18 @@
 
 <script setup>
     import Header from '@/components/Header.vue';
-    import Deleting from '@/components/Deleting.vue';
+    import Profile from '@/components/Profile.vue';
     import Footer from '@/components/MyFooter.vue';
 </script>
 
+
 <style scoped>
-    .flex-container {
+    .profile-page {
         display: flex;
         flex-direction: column;
-        min-height: 100vh; /* Ensure it takes at least the height of the viewport */
-        max-width: 1200px; /* Example max-width */
-        margin: 0 auto; /* Center the flex container */
+        min-height: 100vh;
+        width: 100vw; /* Use the full viewport width */
     }
-
     Header, Deleting {
         flex: 1; /* Makes the content expand to fill available space */
     }

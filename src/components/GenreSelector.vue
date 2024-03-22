@@ -37,13 +37,13 @@
             return {
                 selectedGenre: 'all',
                 genres: [
-                    { name: 'Abstract', imageUrl: '/images/Abstract.png' },
-                    { name: 'Landscape', imageUrl: '/images/landscape.jpg' },
-                    { name: 'Portrait', imageUrl: '/images/portrait.jpg' },
-                    { name: 'Contemporary', imageUrl: '/images/contemporary.jpg' },
-                    { name: 'Photography', imageUrl: '/images/photography.jpg' },
-                    { name: 'Still Life', imageUrl: '/images/StillLife.jpg' },
-                    { name: 'Impressionism', imageUrl: '/images/impressionism.jpg' }
+                    { name: 'Abstract', imageUrl: '/Images/Abstract.png' },
+                    { name: 'Landscape', imageUrl: '/Images/landscape.jpg' },
+                    { name: 'Portrait', imageUrl: '/Images/Portrait.jpg' },
+                    { name: 'Contemporary', imageUrl: '/Images/Contemporary.jpg' },
+                    { name: 'Photography', imageUrl: '/Images/Photography.jpg' },
+                    { name: 'Still Life', imageUrl: '/Images/StillLife.jpg' },
+                    { name: 'Impressionism', imageUrl: '/Images/Impressionism.jpg' }
                 ],
                 genreDescriptions: {
                     'Abstract': 'Experience our Abstract art exhibition through colour, form and creativity. Discover the boundless expressions of artists who are transcending the norms and luring you to look beyond the tangible.',

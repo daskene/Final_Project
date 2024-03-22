@@ -1,53 +1,49 @@
 <template>
+    <div>
+        <Header />
 
-  <form @submit.prevent="login">
-    <div class="field is-grouped">
-      <p class="control is-expanded">
-        <input v-model ='loginEmail'class="input" type="email" placeholder="Enter email">
-        <input v-model ='loginPassword'class="input" type="password" placeholder="Enter password">
-      </p>
-      <p class="control">
-        <button :disabled="!loginEmail && loginPassword" class="button is-info">
-          Log in!
-        </button>
-      </p>
-    </div></form>
+        <form @submit.prevent="login">
+            <div class="field is-grouped">
+                <p class="control is-expanded">
+                    <input v-model="loginEmail" class="input" type="email" placeholder="Enter email">
+                    <input v-model="loginPassword" class="input" type="password" placeholder="Enter password">
+                </p>
+                <p class="control">
+                    <button :disabled="!loginEmail || !loginPassword" class="button is-info">
+                        Log in!
+                    </button>
+                </p>
+            </div>
+        </form>
 
+        <MyFooter />
+    </div>
 </template>
 
-
 <script setup>
-import {ref, onMounted} from 'vue';
+    import { ref } from 'vue';
+    import Header from '@/components/Header.vue'; 
+    import MyFooter from '@/components/MyFooter.vue';
+    import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 
-import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc, onSnapshot, query, where, orderBy
-  ,serverTimestamp, getDoc, updateDoc} from "firebase/firestore"
+    const auth = getAuth();
 
-import{getAuth, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword
-  ,onAuthStateChanged} from "firebase/auth"
+    const loginEmail = ref('');
+    const loginPassword = ref('');
 
-import{db} from '@/firebase'
+    const login = async () => {
+        try {
+            await signInWithEmailAndPassword(auth, loginEmail.value, loginPassword.value);
+        } catch (error) {
+            console.error('Login error:', error);
+        }
+    };
 
-
-const colRef = collection(db, 'art')
-const auth = getAuth()
-//queries
-
-
-const loginEmail = ref('')
-const loginPassword = ref('')
-const login = () => {
-  signInWithEmailAndPassword(auth, loginEmail, loginPassword)
-}
-
-
-onAuthStateChanged(auth, (user) => {
-  console.log('user status changed:', user)
-})
-
-
+    onAuthStateChanged(auth, (user) => {
+        console.log('user status changed:', user);
+    });
 </script>
 
-
 <style scoped>
-@import 'bulma/css/bulma.css';
+    @import 'bulma/css/bulma.css';
 </style>

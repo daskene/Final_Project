@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "bulma": "^0.9.4",
+    "cropperjs": "^1.6.1",
     "firebase": "^10.8.0",
     "vue": "^3.4.15",
+    "vue-cropperjs": "^5.0.0",
+    "vue-image-crop-upload": "^3.0.3",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
