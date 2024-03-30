@@ -137,7 +137,7 @@
 
     .modal {
         position: fixed;
-        z-index: 1000; /* This should be high enough to be on top of other elements */
+        z-index: 1000; 
         left: 0;
         top: 0;
         width: 100%;
@@ -167,7 +167,7 @@
         flex-direction: column;
         justify-content: space-between;
         z-index: 1001; /* Above the modal background */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for depth */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
     }
 
     .modal-card-body {
@@ -201,7 +201,7 @@
             background-color: #e82c4d; /* A darker red on hover */
         }
 
-    /* Style for the cancel button if you wish to differentiate it */
+    /* Style for the cancel button */
     .button:not(.is-danger) {
         background-color: #555; /* A neutral color for cancel */
         color: #fff;
@@ -213,8 +213,8 @@
 
     .image-preview img {
         max-width: 100%;
-        max-height: 200px; /* Adjust based on your preference */
+        max-height: 200px;
         margin-top: 20px;
-        border-radius: 5px; /* Optional for rounded corners */
+        border-radius: 5px; /* For rounded corners */
     }
 </style>
