@@ -18,8 +18,6 @@
     },
     methods: {
       onSearch() {
-        // Handle the search logic here
-        // For now, we'll just log the search query to the console
         console.log("Searching for:", this.searchQuery);
       }
     }
