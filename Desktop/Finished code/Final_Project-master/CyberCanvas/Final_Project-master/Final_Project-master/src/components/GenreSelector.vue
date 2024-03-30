@@ -4,7 +4,7 @@
         <div class="welcome-banner">
             <p v-if="!currentGenreDescription" class="welcome-message">Where everything starts with a stroke of a brush. Begin exploring here.</p>
             <p v-if="!currentGenreDescription" class="welcome-message">Select a genre to explore our collection.</p>
-            <!-- Display the current genre's description if available -->
+            <!-- Display the current genre's description-->
             <div v-if="currentGenreDescription" class="genre-description">
                 <h3>{{ selectedGenre }}</h3>
                 <p>{{ currentGenreDescription }}</p>
@@ -32,7 +32,7 @@
         data() {
             return {
                 currentGenreDescription: '', // Initialize the current genre's description
-                selectedGenre: '', // Added selectedGenre data property
+                selectedGenre: '', // Added selectedGenre data
                 genreDescriptions: {
                     'Abstract': 'Experience our Abstract art exhibition through colour, form, and creativity. Discover the boundless expressions of artists who are transcending the norms and luring you to look beyond the tangible.',
                     'Landscape': 'Embark on the optical adventure via our landscape exhibition, where you will discover the harmony of nature combined with artistic interpretation. Immerse yourself in tranquil sunsets, vibrant flowers and rocky mountains that echo the essence of the natural world.',
@@ -41,7 +41,7 @@
                     'Photography': 'Take an adventure captured through the lens of a camera. Delve into our photography exhibition to explore where each photographer constructs compelling visual narrative that embodies the essence of time, place, and emotion.',
                     'StillLife': 'Take a deep breath of new life in our still life exhibition. Witness firsthand how an artist considers the mundane into fascinating works of art.',
                     'Impressionism': 'Through our impressionist exhibition you are invited to embrace a world of small, thin yet vivid brush strokes. Discover the elegance of the ordinary everyday scenes.'
-                }, // Moved genreDescriptions here
+                }, 
             };
         },
         emits: ['genre-selected'],
