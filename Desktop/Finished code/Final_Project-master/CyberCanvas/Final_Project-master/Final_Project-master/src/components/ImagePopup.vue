@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import LikeButton from '@/components/likeButton.vue'; // Adjust the path as needed
+import LikeButton from '@/components/likeButton.vue'; 
 
 export default {
   props: {
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-/* Your existing styles here */
+
 
 .image-popup {
   position: fixed;
