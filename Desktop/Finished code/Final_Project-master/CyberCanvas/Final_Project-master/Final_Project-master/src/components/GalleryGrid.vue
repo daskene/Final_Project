@@ -97,7 +97,7 @@
         display: grid;
         padding: 10px; /* This acts as the border width */
         background: linear-gradient(45deg, #000439, #000970); /* Gradient color */
-        border-radius: 10px; /* Optional for rounded corners */
+        border-radius: 10px; /* Rounded corners */
         box-shadow: 0 4px 8px rgba(2, 2, 1, 0.2); /* Drop shadow: horizontal offset, vertical offset, blur radius, color */
         margin-bottom: 50px;
         width: 80%;
