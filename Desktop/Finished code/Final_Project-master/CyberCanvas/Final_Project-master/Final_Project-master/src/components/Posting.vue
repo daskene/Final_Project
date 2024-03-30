@@ -145,7 +145,7 @@
         background-color: #000; /* Black background */
         color: #fff; /* White text */
         border-radius: 10px; /* Rounded edges */
-        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* Optional: subtle white glow for better visibility */
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); 
     }
 
     .form-group {
@@ -184,7 +184,7 @@
 
     .modal {
         position: fixed;
-        z-index: 1000; /* This should be high enough to be on top of other elements */
+        z-index: 1000; 
         left: 0;
         top: 0;
         width: 100%;
