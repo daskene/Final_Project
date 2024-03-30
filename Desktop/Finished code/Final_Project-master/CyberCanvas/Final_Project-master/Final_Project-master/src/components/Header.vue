@@ -133,7 +133,7 @@ onAuthStateChanged(auth, async (user) => {
   text-decoration: none; /* Remove default underline */
 }
 
-/* Optional: Hover styles for links */
+/* Hover styles for links */
 .home-link:hover,
 .gallery-link:hover,
 .posting-link:hover,
