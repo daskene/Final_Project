@@ -46,7 +46,7 @@
 .image-viewer img {
   max-height: 100%;
   max-width: 60%; /* Bigger image size */
-  object-fit: cover; /* Adjust as needed */
+  object-fit: cover; 
 }
 
 .image-viewer .description {
@@ -56,14 +56,14 @@
   flex-direction: column;
   justify-content: center;
   font-size: 1.2em; /* Larger text */
-  font-family: 'Arial', sans-serif; /* Nice, readable font */
+  font-family: 'Arial', sans-serif; /* Nice font */
 }
 
 .image-viewer button {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #f00; /* Adjust as needed */
+  background-color: #f00;
   color: white;
   padding: 10px 15px;
   border-radius: 5px; /* A bit of styling */
