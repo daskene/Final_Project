@@ -18,7 +18,7 @@
 
 
 <script>
-    import Logo from './Logo.vue'; // Adjust the import path to where Logo.vue is located relative to this file
+    import Logo from './Logo.vue'; 
 
     export default {
         components: {
