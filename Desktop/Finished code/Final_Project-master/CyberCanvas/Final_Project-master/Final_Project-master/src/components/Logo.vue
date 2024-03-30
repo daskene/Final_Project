@@ -15,7 +15,7 @@ export default {
 
 <style>
 .logo-container img {
-  max-width: 100px; /* Adjust the size as needed */
+  max-width: 100px; 
   height: auto;
   padding-left: 20px;
 }
