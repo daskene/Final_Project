@@ -1,6 +1,6 @@
 <template>
     <div>
-    <!-- Safely display image if the URL is available -->
+   
     <img v-if="image && image.ImageURL" :src="image.ImageURL" :alt="image.ImageName" />
     <p v-else>Image not available</p>
     </div>
@@ -19,11 +19,11 @@
   
   <style>
     img {
-      max-width: 100%; /* or any other size */
-      max-height: 100%; /* maintain aspect ratio */
+      max-width: 100%;
+      max-height: 100%;
       object-fit: cover;
       border-radius: 8px;
     }
-  /* Add your styling here */
+
   </style>
   
