@@ -41,12 +41,12 @@
             },
         },
         mounted() {
-            this.interval = setInterval(this.advanceCarousel, 3000); // Adjust the timing as needed
+            this.interval = setInterval(this.advanceCarousel, 3000); 
         },
         methods: {
             advanceCarousel() {
                 if (!this.images || this.images.length === 0) {
-                    // Optionally stop the interval or handle the undefined case
+            
                     clearInterval(this.interval);
                     return;
                 }
@@ -86,7 +86,7 @@
 
     .carousel-item {
         flex: 0 0 auto;
-        width: calc(60% / 3); /* Example fixed width, adjust as needed */
+        width: calc(60% / 3); /* Example fixed width */
         display: flex;
         flex-direction: column;
         align-items: center;
