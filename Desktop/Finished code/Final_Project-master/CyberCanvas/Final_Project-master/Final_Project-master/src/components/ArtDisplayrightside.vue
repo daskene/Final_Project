@@ -14,10 +14,10 @@
     .home-container {
         background-color: black;
         color: white;
-        font-family: 'Arial', sans-serif; /* You can choose a font that you think is nice */
-        font-size: 2em; /* Adjust the size as needed to make the text big enough */
+        font-family: 'Arial', sans-serif;
+        font-size: 2em; 
         text-align: center;
         padding: 20px;
-        min-height: 100vh; /* Make sure it covers the whole viewport height */
+        min-height: 100vh; /* to make sure it covers the whole viewport height */
     }
 </style>
