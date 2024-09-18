@@ -1,7 +1,7 @@
 # CyberCanvas
 
 # Description  
-CyberCanvas is an innovative online exhibition platform designed to celebrate artistic expression and connect art enthusiasts worldwide. The platform provides a virtual gallery where artists can showcase their work anonymously, allowing users to explore captivating artworks across various genres without distractions from personal interactions. CyberCanvas leverages cutting-edge technology, offering personalized art recommendations based on user preferences and browsing history, while fostering a vibrant community through seamless integration with social media.
+CyberCanvas is an innovative online exhibition platform designed to celebrate artistic expression and connect art enthusiasts worldwide. The platform provides a virtual gallery where artists can showcase their work anonymously, allowing users to explore captivating artworks across various genres without distractions from personal interactions. CyberCanvas leverages cutting-edge technology, offering art recommendations based on user preferences while fostering a vibrant community through seamless integration with social media.
 
 You can experience CyberCanvas live [here ](https://cybercanvas.web.app/) and explore its features or contribute to the source code via the GitHub repository.
 
